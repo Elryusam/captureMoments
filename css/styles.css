@@ -1,0 +1,130 @@
+
+.navbar-logo {
+  margin-top: -25px;
+  margin-bottom: -25px;
+  width: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.fab {
+    font-size: 30px;
+    color: gold;
+}
+.lista{
+  margin-top: -25px;
+  margin-bottom: -30px;
+}
+.custom-img {
+  width: 400px; 
+  height: 768px; 
+  object-fit: cover; 
+}
+.carousel-caption h5 {
+  font-size: 36px; /* Ajusta el tamaño de la fuente del título según tus necesidades */
+  color: #ffffff; /* Ajusta el color del texto del título según tus necesidades */
+}
+
+.carousel-caption p {
+  font-size: 24px; /* Ajusta el tamaño de la fuente del texto según tus necesidades */
+  color: #ffffff; /* Ajusta el color del texto según tus necesidades */
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 20px;
+  height: 4px;
+  margin: 0 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators li.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.carousel-caption .caption-content {
+  background-color: rgba(0, 0, 0, 0.322);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+}
+.divider {
+  text-align: center;
+}
+
+.divider img {
+  max-width: 100%;
+  height: 50px;
+  margin: 0;
+}
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para centrar el botón */
+.btn-center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer {
+  padding: 2rem 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #343a40;
+  border-radius: 50%;
+  margin-right: 10px;
+  
+}
+.container h4{
+  color: #ffffff;
+}
+.social-icons a {
+  background-color: transparent;
+  font-size: 35px;
+  color: gold; 
+  text-decoration: none;
+  margin-right: 50px;
+  margin-top: 20px; 
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+.navbar-brand:hover {
+  color: white !important;
+}
+.nav-link:hover {
+  color: gold !important;
+}
+.fab:hover{
+  color: white !important;
+}
+.b-contactanos:hover{
+  color: gold !important;
+  background-color: black !important;
+}
