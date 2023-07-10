@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    fetch('https://tu-api.com/api/entradas_blog')
+    fetch('http://localhost:3000/api/entradas_blog')
       .then(response => response.json())
       .then(data => {
         const entradasContainer = document.getElementById('entradas-container');
