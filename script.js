@@ -1,3 +1,4 @@
+require('dotenv').config();
 window.addEventListener('DOMContentLoaded', () => {
     fetch('http://localhost:3000/api/entradas_blog')
       .then(response => response.json())

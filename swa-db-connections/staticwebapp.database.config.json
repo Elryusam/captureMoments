@@ -3,9 +3,9 @@
     "data-source": {
       "database-type": "mssql",
       "options": {
-        "set-session-context": false 
+        "set-session-context": false
       },
-      "connection-string": "@env('Server=tcp:capturemoments.database.windows.net,1433;Initial Catalog=captureMomentsDB;Persist Security Info=False;User ID=elryusam;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')"
+      "connection-string": "@env('DATABASE_CONNECTION_STRING')"
     },
     "runtime": {
       "rest": {
