@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
           entradasContainer.appendChild(entryDiv);
   
           // Obtener comentarios de la entrada
-          fetch(`https://tu-api.com/api/http://localhost:3000/api/entradas_blog`)
+          fetch(`http://localhost:3000/api/entradas_blog`)
             .then(response => response.json())
             .then(comentarios => {
               const comentariosList = document.getElementById(`comentarios-${entrada.id}`);
