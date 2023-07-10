@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h1>Entradas del blog</h1>
+        <ul id="lista-entradas"></ul>
+    
+        <h2>Comentarios</h2>
+        <ul id="lista-comentarios"></ul>
+    
+        <script>
+          // Obtener las entradas del blog
+          fetch('/api/entradas')
+            .then(response => response.json())
+            .then(data => {
+              const listaEntradas = document.querySelector('#lista-entradas');
+              data.forEach(entrada => {
+                const item = document.createElement('li');
+                item.innerHTML = `
+                  <h3>${entrada.titulo}</h3>
+                  <p>${entrada.contenido}</p>
+                  <p>Fecha de publicación: ${entrada.fecha_publicacion}</p>
+                  <p>Autor: ${entrada.autor}</p>
+                  <img src="${entrada.url_imagen}" alt="Imagen de la entrada">
+                `;
+                listaEntradas.appendChild(item);
+              });
+            })
+            .catch(error => {
+              console.error('Error al obtener las entradas:', error);
+            });
+    
+          // Obtener los comentarios
+          fetch('/api/comentarios')
+            .then(response => response.json())
+            .then(data => {
+              const listaComentarios = document.querySelector('#lista-comentarios');
+              data.forEach(comentario => {
+                const item = document.createElement('li');
+                item.innerHTML = `
+                  <p>${comentario.contenido}</p>
+                  <p>Fecha de publicación: ${comentario.fecha_publicacion}</p>
+                `;
+                listaComentarios.appendChild(item);
+              });
+            })
+            .catch(error => {
+              console.error('Error al obtener los comentarios:', error);
+            });
+        </script>
+</body>
+</html>
