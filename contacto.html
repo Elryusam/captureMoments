@@ -50,40 +50,39 @@
       <div class="divider">
         <img src="imagenes/imagen_divisora.png" alt="Imagen Divisoria">
     </div> 
-
     <div class="container">
-        <section class="row">
-            <div class="col-md-6 mx-auto">
-                <h2 class="text-center">Contacto</h2>
-                <p>¡Estamos emocionados de escuchar de ti! Si tienes alguna pregunta, solicitud de información o deseas reservar nuestros servicios de fotografía, por favor completa el formulario a continuación. Nos pondremos en contacto contigo lo antes posible para discutir los detalles y ayudarte a crear momentos preciosos y memorables.</p>
-                <img src="imagenes/CONTACT-US.jpg" alt="Imagen de contacto" class="img-fluid">
-            </div>
-            <div class="col-md-6 mx-auto">
-                <h2 class="text-center">Formulario de Contacto</h2>
-                <form action="procesar_formulario.php" method="post">
+      <section class="row">
+          <div class="col-md-6 mx-auto">
+              <h2 class="text-center">Contacto</h2>
+              <p>¡Estamos emocionados de escuchar de ti! Si tienes alguna pregunta, solicitud de información o deseas reservar nuestros servicios de fotografía, por favor completa el formulario a continuación. Nos pondremos en contacto contigo lo antes posible para discutir los detalles y ayudarte a crear momentos preciosos y memorables.</p>
+              <img src="imagenes/CONTACT-US.jpg" alt="Imagen de contacto" class="img-fluid">
+          </div>
+          <div class="col-md-6 mx-auto">
+              <h2 class="text-center">Formulario de Contacto</h2>
+              <form action="procesar_formulario.php" method="post" onsubmit="return validarFormulario()">
                   <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                      <label for="nombre">Nombre:</label>
+                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
                   </div>
                   <div class="form-group">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico">
+                      <label for="email">Correo electrónico:</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico">
                   </div>
                   <div class="form-group">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono">
+                      <label for="telefono">Teléfono:</label>
+                      <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono">
                   </div>
                   <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Ingrese su mensaje o consulta"></textarea>
+                      <label for="mensaje">Mensaje:</label>
+                      <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Ingrese su mensaje o consulta"></textarea>
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn btn-center mt-4 b-contactanos" style="background-color: gold;">Enviar</button>
+                      <button type="submit" class="btn btn-center mt-4 b-contactanos" style="background-color: gold;">Enviar</button>
                   </div>
-                </form>
-            </div>
-        </section>
-    </div>
+              </form>
+          </div>
+      </section>
+  </div>
     <div class="divider">
         <img src="imagenes/imagen_divisora.png" alt="Imagen Divisoria">
     </div>
@@ -161,6 +160,6 @@
           </div>
         </div>
       </footer>
-    
+    <script src="js/formulario.js"></script>
 </body>
 </html>
